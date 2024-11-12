@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Nullable>enable</Nullable>
+	  <Description>Incikit is a C# .NET library for automated incident response, ideal for handling unauthorized access, malicious files, and suspicious account behavior. The library provides customizable actions such as account locking, file quarantine, and administrator notifications, integrating with EDR systems to offer a strong response layer.</Description>
+	  <PackageTags>IncidentResponse; Security; EDR; Automation; .NET</PackageTags>
+	  <PackageId>menfra.icikit</PackageId>
+	  <Authors>Frank Mensah</Authors>
+	  <Company>Frank Mensah</Company>
+	  <PackageReadmeFile>README.md</PackageReadmeFile>
+	  <Version>4.0.1</Version>
+	  <PackageLicenseExpression>MIT</PackageLicenseExpression>
+	  <RepositoryUrl>https://github.com/menfra/icikit-middleware</RepositoryUrl>
+	  <RepositoryType>git</RepositoryType>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<None Include="..\README.md" Pack="true" PackagePath="\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.0" />
+	  <PackageReference Include="Microsoft.Extensions.Logging" Version="9.0.0" />
+	</ItemGroup>
+
+</Project>
